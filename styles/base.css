@@ -63,7 +63,7 @@ header span {
 }
 
 nav {
-    background-color: #f0f0f0; /* Background color for the nav */
+    background-color: tan; /* Background color for the nav */
 }
 
 nav ul {
@@ -78,7 +78,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333; /* Default text color */
+    color: white; /* Default text color */
     padding: 10px 15px;
     display: block;
     text-align: center;
@@ -87,7 +87,7 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #ccc; /* Background color on hover */
-    color: #fff; /* Text color on hover */
+    color: #615c5c;
 }
 
 h1 {
@@ -97,6 +97,7 @@ h1 {
     font-family: 'Ubuntu Mono', sans-serif;
     font-weight: 700;
     font-style: italic;
+    color:rgb(114, 114, 114);
     
 }
 

@@ -75,7 +75,7 @@
     nav {
         display: flex;
         justify-content: center;
-        background-color: #f0f0f0;
+        background-color: tan;
     }
 
     nav ul {
@@ -92,14 +92,14 @@
 
     nav ul li a {
         text-decoration: none;
-        color: #333;
+        color: white;
         padding: 10px 15px;
         display: block;
     }
 
     nav ul li a:hover {
         background-color: #ccc;
-        color: #fff;
+        color: #615c5c;
     }
 
     h1 {
@@ -109,6 +109,7 @@
         font-family: 'Ubuntu Mono', sans-serif;
         font-weight: 700;
         font-style: italic;
+        color:rgb(114, 114, 114);
     }
 
     h1 span {
