@@ -16,6 +16,7 @@ const navigation = document.querySelector('.navigation');
 hamButton.addEventListener('click', () => {
     navigation.classList.toggle('open');
     hamButton.classList.toggle('open');
+    document.querySelector('.close-icon').classList.toggle('show');
 });
 
 const darkModeToggle = document.getElementById('darkModeToggle');

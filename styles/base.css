@@ -31,11 +31,11 @@ nav a:hover {
 }
 
 header img {
-    width: 100px; /* Adjust this value as needed */
-    height: auto; /* This maintains the aspect ratio */
+    width: 100px; 
+    height: auto; 
 }
 
-/* Center the header content */
+
 header {
     text-align: center;
     padding: 20px;
@@ -63,12 +63,12 @@ header span {
 }
 
 @media (max-width: 767px) {
-    /* Hamburger Menu Icon */
+    
     #menu {
         display: block;
     }
 
-    /* Show Navigation Menu when Hamburger Menu Icon is clicked */
+    
     .navigation.open {
         display: block;
     }
@@ -83,7 +83,7 @@ header span {
         right: 20px;
     }
     
-    /* Hamburger Menu Icon Bars */
+   
     #menu .icon-bar {
         display: block;
         width: 25px;
@@ -91,19 +91,33 @@ header span {
         background-color: black;
         margin: 5px auto;
     }
+    #menu.open .icon-bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    #menu.open .icon-bar:nth-child(2) {
+        opacity: 0;
+    }
+    #menu.open .icon-bar:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
     
-    /* Navigation Menu for Smaller Screens */
+    
+    .close-icon {
+        display: none;
+    }
+    
+
     .navigation {
         display: none;
         position: absolute;
-        top: 70px; /* Adjust as needed */
+        top: 70px; 
         right: 20px;
         background-color: black;
         padding: 10px;
         border-radius: 5px;
     }
     
-    /* Navigation Menu Items */
+
     .navigation ul {
         list-style: none;
         padding: 0;
