@@ -62,27 +62,64 @@ header span {
     color: #333; /* Adjust color as needed */
 }
 
-nav {
-    background-color: tan; /* Background color for the nav */
-}
+@media (max-width: 767px) {
+    /* Hamburger Menu Icon */
+    #menu {
+        display: block;
+    }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
+    /* Show Navigation Menu when Hamburger Menu Icon is clicked */
+    .navigation.open {
+        display: block;
+    }
+    #menu {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 10px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    
+    /* Hamburger Menu Icon Bars */
+    #menu .icon-bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 5px auto;
+    }
+    
+    /* Navigation Menu for Smaller Screens */
+    .navigation {
+        display: none;
+        position: absolute;
+        top: 70px; /* Adjust as needed */
+        right: 20px;
+        background-color: black;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+    /* Navigation Menu Items */
+    .navigation ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .navigation ul li {
+        margin-bottom: 10px;
+    }
+    
+    .navigation ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Ubuntu Mono', sans-serif;
+    }
 
-nav ul li {
-    margin: 10px 0; /* Add vertical spacing between each list item */
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white; /* Default text color */
-    padding: 10px 15px;
-    display: block;
-    text-align: center;
-    font-family: 'Ubuntu Mono', sans-serif;
 }
 
 nav ul li a:hover {
@@ -139,3 +176,33 @@ h1 span {
     text-align: center;
     font-family: 'Ubuntu Mono', sans-serif;
 }
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+    
+}
+#darkModeToggle {
+    display: block;
+    width: 150px;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-family: 'Ubuntu Mono', sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Center button text */
+#darkModeToggle {
+    text-align: center;
+}
+
+/* Hover effect */
+#darkModeToggle:hover {
+    background-color: #555;
+}
+
+
