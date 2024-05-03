@@ -195,12 +195,12 @@ h1 span {
     cursor: pointer;
 }
 
-/* Center button text */
+
 #darkModeToggle {
     text-align: center;
 }
 
-/* Hover effect */
+
 #darkModeToggle:hover {
     background-color: #555;
 }
