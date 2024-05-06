@@ -1,0 +1,33 @@
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 300px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 10px; /* Adjust spacing between logo and h1 */
+}
+
+.chamber-name {
+    margin: 0; /* Remove default margin */
+    font-size: 28px;
+}
+
+.navigation {
+    flex-grow: 1; /* Take remaining space */
+}
+
+.navigation ul {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navigation ul li {
+    margin-right: 20px; /* Adjust spacing between navigation items */
+}
+
+.navigation ul li:last-child {
+    margin-right: 0; /* Remove margin from last item */
+}
