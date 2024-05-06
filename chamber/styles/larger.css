@@ -1,18 +1,33 @@
+h1 {
+    font-family: "Arial Black", Arial, sans-serif;  
+}
+.topline {
+    margin-bottom: -30px;
+}
+h2 {
+    font-family: "Arial Black", Arial, sans-serif;
+    font-size: 38px;
+}
+.hero-overlay p{
+    font-family: "Arial Black", Arial, sans-serif;
+}
+
 .header-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .logo {
-    width: 300px; /* Adjust size as needed */
+    width: 340px; /* Adjust size as needed */
     height: auto;
     margin-right: 10px; /* Adjust spacing between logo and h1 */
 }
 
 .chamber-name {
     margin: 0; /* Remove default margin */
-    font-size: 28px;
+    font-size: 26px;
 }
 
 .navigation {
@@ -21,7 +36,8 @@
 
 .navigation ul {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
+    margin-right: 10px;
 }
 
 .navigation ul li {
@@ -30,4 +46,62 @@
 
 .navigation ul li:last-child {
     margin-right: 0; /* Remove margin from last item */
+}
+.hero-section {
+    position: relative;
+    height: 100vh; /* Set height to cover the entire viewport */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.hero-section img {
+    width: 100%; /* Make the image fill the entire width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+section {
+    margin-bottom: 40px;
+}
+
+/* Center text within sections */
+section h2,
+section p,
+section .event,
+section .spotlight {
+    text-align: center;
+}
+
+/* Style links within sections */
+section a {
+    color: #007bff;
+    text-decoration: none;
+    text-align: center;
+}
+
+section a:hover {
+    text-decoration: underline;
+}
+
+/* Style footer */
+footer {
+    text-align: center;
+    margin-top: 40px;
+}
+.cta-section {
+   text-align: center;
 }
