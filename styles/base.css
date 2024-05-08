@@ -80,11 +80,9 @@ header span {
 
 .iframe-container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    height: 50vh; /* Set height to 50% of viewport height */
-    padding-bottom: 8%;
-    padding-top: 8%;
+    flex-wrap: wrap; /* Allow cards to wrap onto multiple lines */
+    justify-content: center; /* Center the cards horizontally */
+    align-items: center; /* Add margin to create space between elements */
 }
 
 /* Ensure the iframe fills the container */
@@ -96,10 +94,19 @@ header span {
 }
 
 
+
 @media (max-width: 767px) {
+
+  
     
     #menu {
         display: block;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap; /* Allow cards to wrap onto multiple lines */
+        justify-content: center; /* Center the cards horizontally */
+        align-items: center;
     }
 
     
@@ -257,6 +264,12 @@ h1 span {
 
 #darkModeToggle:hover {
     background-color: #555;
+}
+.button-contain {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap onto multiple lines */
+    justify-content: center; /* Center the cards horizontally */
+    align-items: center;
 }
 
 
