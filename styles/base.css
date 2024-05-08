@@ -61,6 +61,40 @@ header span {
     font-weight: bold;
     color: #333; /* Adjust color as needed */
 }
+.hero-section img {
+    width: 100%; /* Make the image fill the entire width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 1;
+    font-family: 'Ubuntu Mono', sans-serif;
+}
+
+.iframe-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 50vh; /* Set height to 50% of viewport height */
+    padding-bottom: 8%;
+    padding-top: 8%;
+}
+
+/* Ensure the iframe fills the container */
+.iframe {
+    width: 100%; /* Occupy 100% of the container width */
+    height: 100%; /* Occupy 100% of the container height */
+    max-width: 800px; /* Adjust the maximum width as needed */
+    max-height: 600px; /* Adjust the maximum height as needed */
+}
+
 
 @media (max-width: 767px) {
     
@@ -160,6 +194,7 @@ h1 span {
     
 }
 
+
 .main-content {
     display: flex;
     flex-direction: column; /* Stack the cards on top of each other */
@@ -168,7 +203,12 @@ h1 span {
 }
 
 
-
+.card-container{
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap onto multiple lines */
+    justify-content: center; /* Center the cards horizontally */
+    align-items: center; /* Center the cards vertically */
+}
 .card {
     width: 100%; /* Ensure the card takes the full width */
     max-width: 400px; /* Adjust the maximum width as needed */
