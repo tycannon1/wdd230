@@ -69,13 +69,15 @@ header span {
 
 .hero-overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 50%; /* Position the overlay vertically centered */
+    left: 50%; /* Position the overlay horizontally centered */
+    transform: translate(-50%, -50%); /* Center the overlay perfectly */
     text-align: center;
     color: white;
-    z-index: 1;
+    padding-top: 30%;
+    z-index: 1; /* Ensure the overlay is above the image */
     font-family: 'Ubuntu Mono', sans-serif;
+    width: 100%; /* Make the overlay cover the entire width of the container */
 }
 
 .iframe-container {
@@ -92,7 +94,13 @@ header span {
     max-width: 800px; /* Adjust the maximum width as needed */
     max-height: 600px; /* Adjust the maximum height as needed */
 }
-
+.place{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap onto multiple lines */
+    justify-content: center; /* Center the cards horizontally */
+    align-items: center;
+}
 
 
 @media (max-width: 767px) {

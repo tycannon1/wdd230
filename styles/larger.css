@@ -1,4 +1,12 @@
 @media (min-width: 768px) {
+  
+    .place{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; /* Allow cards to wrap onto multiple lines */
+        justify-content: center; /* Center the cards horizontally */
+        align-items: center;
+    }
     /* Fonts */
     .ubuntu-mono-regular {
         font-family: "Ubuntu Mono", monospace;
