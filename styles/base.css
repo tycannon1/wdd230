@@ -101,6 +101,9 @@ header span {
     justify-content: center; /* Center the cards horizontally */
     align-items: center;
 }
+.navigation{
+    z-index: 100;
+}
 
 
 @media (max-width: 767px) {
@@ -159,7 +162,7 @@ header span {
     .navigation {
         display: none;
         position: absolute;
-        top: 70px; 
+        top: 120px; 
         right: 20px;
         background-color: black;
         padding: 10px;

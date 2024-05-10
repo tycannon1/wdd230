@@ -1,12 +1,5 @@
 @media (min-width: 768px) {
   
-    .place{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap; /* Allow cards to wrap onto multiple lines */
-        justify-content: center; /* Center the cards horizontally */
-        align-items: center;
-    }
     /* Fonts */
     .ubuntu-mono-regular {
         font-family: "Ubuntu Mono", monospace;
@@ -88,6 +81,7 @@
         display: flex;
         justify-content: center;
         background-color: rgb(0, 0, 0);
+        
     }
 
     nav ul {
@@ -96,17 +90,19 @@
         padding: 0;
         display: flex;
         font-family: 'Ubuntu Mono', sans-serif;
+        z-index: 100;
     }
 
     nav ul li {
         margin: 0 10px;
+        
     }
 
     nav ul li a {
         text-decoration: none;
         color: white;
         padding: 10px 15px;
-        display: block;
+        display: inline-block;
     }
 
     nav ul li a:hover {
@@ -157,6 +153,13 @@
     .footer-container {
         text-align: center;
         font-family: 'Ubuntu Mono', sans-serif;
+    }
+    .place{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap; /* Allow cards to wrap onto multiple lines */
+        justify-content: center; /* Center the cards horizontally */
+        align-items: center;
     }
 }
 .dark-mode {

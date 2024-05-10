@@ -1,4 +1,10 @@
-h1 {
+
+@media (min-width: 768px){
+    #menu {
+        display: none;
+    }
+
+    h1 {
     font-family: "Arial Black", Arial, sans-serif;  
 }
 .topline {
@@ -38,36 +44,18 @@ h2 {
     display: flex;
     justify-content: flex-end;
     margin-right: 10px;
+    
 }
 
 .navigation ul li {
     margin-right: 20px; /* Adjust spacing between navigation items */
+    z-index: 100;
 }
 
 .navigation ul li:last-child {
     margin-right: 0; /* Remove margin from last item */
 }
-.hero-section {
-    position: relative;
-    height: 100vh; /* Set height to cover the entire viewport */
-    overflow: hidden; /* Hide overflow content */
-}
 
-.hero-section img {
-    width: 100%; /* Make the image fill the entire width */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: cover; /* Ensure the image covers the entire container */
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    z-index: 1;
-}
 main {
     display: flex;
     flex-direction: column;
@@ -104,4 +92,5 @@ footer {
 }
 .cta-section {
    text-align: center;
+}
 }

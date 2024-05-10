@@ -1,2 +1,162 @@
+/* Default styles */
+h1,
+h2,
+.hero-overlay p,
+.chamber-name,
+.navigation ul li,
+.navigation ul li:last-child,
+section h2,
+section p,
+section .event,
+section .spotlight,
+section a,
+footer {
+    font-family: "Arial Black", Arial, sans-serif;
+}
+
+h1 {
+    font-size: 28px; /* Decrease font size for h1 on smaller screens */
+}
+
+h2 {
+    font-size: 24px; /* Decrease font size for h2 on smaller screens */
+}
+
+.hero-section {
+    position: relative; /* Ensure the section is positioned relative to its container */
+}
+
+.hero-overlay {
+    position: absolute; /* Position the overlay absolutely within the hero section */
+    top: 50%; /* Position the overlay vertically centered */
+    left: 50%; /* Position the overlay horizontally centered */
+    transform: translate(-50%, -50%); /* Center the overlay perfectly */
+    text-align: center;
+    color: white;
+    z-index: 1; /* Ensure the overlay is above the image */
+    font-family: 'Ubuntu Mono', sans-serif;
+    width: 100%; /* Make the overlay cover the entire width of the container */
+}
+
+.hero-section img {
+    width: 100%; /* Make the image fill the entire width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the entire container */
+}
+.navigation {
+    z-index: 100;
+}
+.navigation.open {
+    display: block;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 767px) {
+    
+
+    main {
+        display: flex;
+        flex-wrap: wrap; /* Allow cards to wrap onto multiple lines */
+        justify-content: center; /* Center the cards horizontally */
+        align-items: center;
+    }
+
+    
+    .navigation.open {
+        display: block;
+    }
+    #menu {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        padding: 15px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 300;
+        
+    }
+    
+   
+    #menu .icon-bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: black;
+        margin: 5px auto;
+    }
+    #menu.open .icon-bar:nth-child(1) {
+        transform: rotate(45deg) translate(5px, 5px);
+    }
+    #menu.open .icon-bar:nth-child(2) {
+        opacity: 0;
+    }
+    #menu.open .icon-bar:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -6px);
+    }
+    
+    
+    .close-icon {
+        display: none;
+    }
+    
+
+    .navigation {
+        display: none;
+        position: absolute;
+        top: 70px; 
+        right: 20px;
+        background-color: black;
+        padding: 10px;
+        border-radius: 5px;
+    }
+    
+
+    .navigation ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        z-index: 400;
+    }
+    
+    .navigation ul li {
+        margin-bottom: 10px;
+        z-index: 500;
+    }
+    
+    .navigation ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-family: 'Ubuntu Mono', sans-serif;
+    }
+    .logo {
+        width: 200px; /* Further decrease logo size for smaller screens */
+    }
 
 
+
+ 
+
+    h1 {
+        font-size: 24px; /* Further decrease font size for h1 on smaller screens */
+    }
+
+    h2 {
+        font-size: 20px; /* Further decrease font size for h2 on smaller screens */
+    }
+
+    .chamber-name {
+        font-size: 20px; /* Decrease font size for chamber name on smaller screens */
+    }
+
+    footer {
+        font-size: 14px; /* Decrease font size for footer on smaller screens */
+    }
+
+
+
+    .cta-section {
+        padding: 20px; /* Add padding to CTA section on smaller screens */
+    }
+}
