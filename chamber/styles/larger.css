@@ -1,96 +1,167 @@
+@media (min-width: 768px) {
+    /* Ensure main and sidebar take up full window */
+    main {
+        display: flex;
+        flex-direction: row; /* Change flex direction to row */
+        flex: 1; /* Allow main to grow and take remaining space */
+        height: 100vh; /* Set main to full viewport height */
+        overflow: auto; /* Allow scrolling if content overflows */
+    }
 
-@media (min-width: 768px){
+    .sidebar {
+        flex: 1; /* Allow sidebar to grow and take remaining space */
+        overflow-y: auto; /* Allow scrolling if content overflows */
+    }
+
+    .main-content {
+        flex: 2; /* Adjust width of main content */
+        overflow-y: auto; /* Allow scrolling if content overflows */
+    }
+
+    /* Rest of your CSS styles */
     #menu {
         display: none;
     }
-
-    h1 {
-    font-family: "Arial Black", Arial, sans-serif;  
-}
-.topline {
-    margin-bottom: -30px;
-}
-h2 {
-    font-family: "Arial Black", Arial, sans-serif;
-    font-size: 38px;
-}
-.hero-overlay p{
-    font-family: "Arial Black", Arial, sans-serif;
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.logo {
-    width: 340px; /* Adjust size as needed */
-    height: auto;
-    margin-right: 10px; /* Adjust spacing between logo and h1 */
-}
-
-.chamber-name {
-    margin: 0; /* Remove default margin */
-    font-size: 26px;
-}
-
-.navigation {
-    flex-grow: 1; /* Take remaining space */
-}
-
-.navigation ul {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 10px;
     
-}
+    h1 {
+        font-family: "Arial Black", Arial, sans-serif;  
+    }
 
-.navigation ul li {
-    margin-right: 20px; /* Adjust spacing between navigation items */
-    z-index: 100;
-}
+    .topline {
+        margin-bottom: -30px;
+    }
 
-.navigation ul li:last-child {
-    margin-right: 0; /* Remove margin from last item */
-}
+    h2 {
+        font-family: "Arial Black", Arial, sans-serif;
+        font-size: 38px;
+    }
 
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-}
-section {
-    margin-bottom: 40px;
-}
+    .hero-overlay p {
+        font-family: "Arial Black", Arial, sans-serif;
+    }
 
-/* Center text within sections */
-section h2,
-section p,
-section .event,
-section .spotlight {
-    text-align: center;
-}
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+    }
 
-/* Style links within sections */
-section a {
-    color: #007bff;
-    text-decoration: none;
-    text-align: center;
-}
+    .logo {
+        width: 340px; /* Adjust size as needed */
+        height: auto;
+        margin-right: 10px; /* Adjust spacing between logo and h1 */
+    }
 
-section a:hover {
-    text-decoration: underline;
-}
+    .chamber-name {
+        margin: 0; /* Remove default margin */
+        font-size: 26px;
+    }
 
-/* Style footer */
-footer {
-    text-align: center;
-    margin-top: 40px;
-}
-.cta-section {
-   text-align: center;
-}
+    .navigation {
+        flex-grow: 1; /* Take remaining space */
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 10px;
+    }
+
+    .navigation ul li {
+        margin-right: 20px; /* Adjust spacing between navigation items */
+        z-index: 100;
+    }
+
+    .navigation ul li:last-child {
+        margin-right: 0; /* Remove margin from last item */
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    section {
+        margin-bottom: 40px;
+    }
+
+    /* Center text within sections */
+    section h2,
+    section p,
+    section .event,
+    section .spotlight {
+        text-align: center;
+    }
+
+    /* Style links within sections */
+    section a {
+        color: #007bff;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    section a:hover {
+        text-decoration: underline;
+    }
+
+    /* Style footer */
+    footer {
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .cta-section {
+        text-align: center;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 25% 75%;;
+        grid-gap: 20px;
+    }
+
+    .loaded {
+        opacity: 1;
+    }
+
+    .sidebar {
+        display: grid;
+        grid-gap: 20px;
+        background-color: #f0f0f0; /* Set background color */
+        padding: 20px; /* Add padding */
+        height: 100%; /* Adjust height to take up full viewport */
+        width: auto;
+    }
+
+    /* Style individual sidebar boxes */
+    .facts,
+    .events,
+    .featbus {
+        background-color: #fff; /* Set background color */
+        padding: 15px; /* Add padding */
+        border-radius: 5px; /* Add border radius for rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+        /* Remove fixed height to allow content to determine height */
+    }
+
+    .sidebar h2 {
+        font-size: medium;
+    }
+
+    .photos-of-interest {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Create responsive grid layout */
+        grid-gap: 20px;
+    }
+
+    .photos-of-interest img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; /* Ensure images cover the entire box */
+        border-radius: 5px; /* Add border radius for rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+    }
 }

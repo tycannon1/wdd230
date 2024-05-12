@@ -50,6 +50,7 @@ h2 {
     display: block;
 }
 
+
 /* Mobile styles */
 @media only screen and (max-width: 767px) {
     
@@ -159,4 +160,27 @@ h2 {
     .cta-section {
         padding: 20px; /* Add padding to CTA section on smaller screens */
     }
+    .sidebar > div {
+        padding: 30px;
+        margin: 10px;
+        background-color: #f0f0f0; /* Example background color */
+        margin-bottom: 20px; /* Add spacing between sections */
+        border-radius: 10px; /* Add rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+        width: auto;
+       
+    }
+
+    /* Style images to be stacked in boxes */
+    .main-content img {
+        margin: 10px;
+        width: 96%; /* Ensure images fill the container */
+        height: auto; /* Allow images to maintain aspect ratio */
+        object-fit: cover; /* Ensure images cover the entire container */
+        margin-bottom: 20px; /* Add spacing between images */
+        border-radius: 10px; /* Add rounded corners */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+        
+    }
+    
 }
