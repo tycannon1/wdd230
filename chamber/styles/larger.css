@@ -165,4 +165,9 @@
         border-radius: 5px; /* Add border radius for rounded corners */
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
     }
+    .photos-of-interest img:hover {
+        transform: scale(1.05); /* Scale up the image on hover */
+        transition: transform 0.3s ease; /* Add smooth transition */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover for depth */
+    }
 }
