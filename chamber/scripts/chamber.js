@@ -289,17 +289,27 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var images = document.querySelectorAll(".photos-of-interest img");
 
-    function lazyLoad() {
-        images.forEach(function(img) {
-            if (img.getBoundingClientRect().top < window.innerHeight && !img.classList.contains("loaded")) {
-                img.src = img.dataset.src;
-                img.classList.add("loaded");
-            }
-        });
-    }
-
-    lazyLoad();
-
-    window.addEventListener("scroll", lazyLoad);
+    document.addEventListener('DOMContentLoaded', function() {
+        // Select all images within the 'photos-of-interest' section
+        const images = document.querySelectorAll('.photos-of-interest img');
+    
+        function lazyLoad() {
+            images.forEach(img => {
+                // Check if the image is in the viewport
+                if (img.getBoundingClientRect().top < window.innerHeight && !img.classList.contains('loaded')) {
+                    // Replace the 'src' attribute with the value from 'data-src'
+                    img.src = img.getAttribute('data-src');
+                    // Add the 'loaded' class to prevent re-loading
+                    img.classList.add('loaded');
+                }
+            });
+        }
+    
+        // Initial lazy load
+        lazyLoad();
+    
+        // Lazy load on scroll
+        window.addEventListener('scroll', lazyLoad);
+    });
 });
 });
