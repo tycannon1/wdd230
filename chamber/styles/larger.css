@@ -97,8 +97,9 @@
     }
 
     /* Style links within sections */
+   
     section a {
-        color: #007bff;
+        color: darkblue;
         text-decoration: none;
         text-align: center;
     }
