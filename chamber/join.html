@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jackson Hole Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 768px)">
+
+    <link rel="icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+    <header>
+        <div class="header-content">
+            <img src="images/jacksonlogo.png" alt="Chamber Logo" class="logo">
+            <h1 class="chamber-name">CHAMBER OF COMMERCE</h1>
+        </div>
+            <button id="menu" aria-label="Toggle Navigation Menu">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="close-icon">X</span>
+            </button>
+            <nav id="main-menu" class="navigation">
+                <ul>
+                    <li><a href="#">ACTIVITIES</a></li>
+                    <li><a href="#">LODGING</a></li>
+                    <li><a href="week01/chamber-site-plan.html">OUTDOORS</a></li>
+                    <li><a href="#">SHOPPING</a></li>
+                    <li><a href="#">FOR BUSINESS</a></li>
+                </ul>
+            </nav>
+        
+    </header>
+  
+    <section class="membership-form-section">
+        <form method="get" action="thankyou.html">
+            <label for="firstName">First Name:
+                <input type="text" id="firstName" name="firstName" required>
+            </label>
+            <label for="lastName">Last Name:
+                <input type="text" id="lastName" name="lastName" required>
+            </label>
+            <label for="title">Title/Position:
+                <input type="text" id="title" name="title" pattern="[A-Za-z\s\-]{7,}">
+            </label>
+            <label for="email">Email:
+                <input type="email" id="email" name="email" required placeholder="example@example.com">
+            </label>
+            <label for="phone">Mobile Phone:
+                <input type="tel" id="phone" name="phone" required>
+            </label>
+            <label for="organization">Business/Organization Name:
+                <input type="text" id="organization" name="organization" required>
+            </label>
+            <label for="membership">Membership Level:
+                <select id="membership" name="membership" required>
+                    <option value="np">NP Membership</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
+            </label>
+            <label for="description">Business/Organization Description:
+                <textarea id="description" name="description"></textarea>
+            </label>
+            <input type="hidden" id="timestamp" name="timestamp" value="<?php echo date('Y-m-d H:i:s'); ?>">
+            <input type="submit" value="Submit">
+        </form>
+        
+        <div class="membership-benefits">
+            <h2>Membership Benefits</h2>
+            <ul>
+                <li>NP Membership: No fee, basic listing</li>
+                <li>Bronze Membership: Event discounts, basic advertising</li>
+                <li>Silver Membership: Event discounts, enhanced advertising, training sessions</li>
+                <li>Gold Membership: All benefits including premium advertising, special events</li>
+            </ul>
+        </div>
+    </section>
+
+   
+
+    <footer>
+        <p>&copy; 2024 Jackson Hole Chamber of Commerce</p>
+        <p>CONTACT US:</p>
+        <a href="jacksonhole@email.com">jacksonhole@email.com</a>
+        <p>Last Updated: May 3, 2024</p>
+    </footer>    
+    
+</main>
+<script src="scripts/chamber.js"></script>
+</body>
+</html>

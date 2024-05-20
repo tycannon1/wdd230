@@ -170,4 +170,16 @@
         transition: transform 0.3s ease; /* Add smooth transition */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover for depth */
     }
+    .membership-form-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .membership-form-section form,
+    .membership-form-section .membership-benefits {
+        flex: 1;
+        margin-top: 0;
+    }
 }
