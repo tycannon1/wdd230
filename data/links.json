@@ -1,0 +1,63 @@
+{
+  "weeks": [
+    {
+      "week": "Week 1",
+      "links": []
+    },
+    {
+      "week": "Week 2",
+      "links": [
+        {
+          "url": "week02/bom.html",
+          "title": "Favorite Scripture"
+        },
+        {
+          "url": "https://codepen.io/tycannon/pen/yLrdgWN",
+          "title": "Codepen"
+        }
+      ]
+    },
+    {
+      "week": "Week 3",
+      "links": []
+    },
+    {
+      "week": "Week 4",
+      "links": [
+        {
+          "url": "https://codepen.io/tycannon/pen/pomjbBw",
+          "title": "Codepen"
+        },
+        {
+          "url": "week04/tablebuild.html",
+          "title": "Table Activity"
+        },
+        {
+          "url": "https://codepen.io/tycannon/pen/pomjbBw",
+          "title": "Form Activity (codepen)"
+        }
+      ]
+    },
+    {
+      "week": "Week 5",
+      "links": [
+        {
+          "url": "https://codepen.io/tycannon/pen/qBGNQXN",
+          "title": "Psuedo Code (codepen)"
+        },
+        {
+          "url": "week05/new-ward-members.json",
+          "title": "JSON practice"
+        },
+        {
+          "url": "week05/prophets.html",
+          "title": "Prophet Cards"
+        },
+        {
+          "url": "week05/weather.html",
+          "title": "Weather API"
+        }
+      ]
+    }
+  ]
+}

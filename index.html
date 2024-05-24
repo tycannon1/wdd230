@@ -16,7 +16,6 @@
     <meta property="og:image" content="https://www.travelandleisure.com/thmb/Gzpp77bdxK2ThiFnifpshNvZ2G0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/TAL-grand-teton-natinoal-park-JACKSONHOLEWY0823-b7405185a64f49b5aaf48e15b01b7744.jpg">
     <meta property="og:url" content="https://tycannon1.github.io/wdd230/">
 
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -24,29 +23,26 @@
 <body>
     <header>
         <div class="header-content">
-        <img src="images/IMG_22693.webp" alt="Your Profile Image">
-        <h2>TY CANNON</h2>
-        
-    </div>
+            <img src="images/IMG_22693.webp" alt="Your Profile Image">
+            <h2>TY CANNON</h2>
+        </div>
 
-    <button id="menu" aria-label="Toggle Navigation Menu">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="close-icon">X</span>
-    </button>
+        <button id="menu" aria-label="Toggle Navigation Menu">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="close-icon">X</span>
+        </button>
 
-    <nav class="navigation">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="chamber/index.html">Chamber</a></li>
-            <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-            <li><a href="form.html">Form</a></li>
-        </ul>
-    </nav>
-
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="chamber/index.html">Chamber</a></li>
+                <li><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+                <li><a href="form.html">Form</a></li>
+            </ul>
+        </nav>
     </header>
-    
 
     <main>
         <section class="hero-section">
@@ -54,8 +50,7 @@
             images/bern_switzerland_temple_lds_2-2.webp 960w"
                  sizes="(max-width: 767px) 100vw, 960px"
                  src="images/bern_switzerland_temple_lds.webp"
-                 alt="Temple Image"
->
+                 alt="Temple Image">
             <div class="hero-overlay">
                 <h2>BERN SWITZERLAND TEMPLE</h2>
             </div>
@@ -65,39 +60,34 @@
         <div class="card-container">
             <section class="card learning-activities">
                 <h2>LEARNING ACTIVITIES</h2>
-                <ul>
-                    <li><a href="https://codepen.io/tycannon/pen/yLrdgWN">Week 2 - CodePen</a></li>
-                    <li><a href="week02/bom.html">Week 2 - Favorite Scripture Activity</a></li>
-                    <li><a href="https://codepen.io/tycannon/pen/pomjbBw">Week 4 - CodePen</a></li>
-                    <li><a href="week04/tablebuild.html">Table Build Activity</a></li>
-                    <li><a href="https://codepen.io/tycannon/pen/pomjbBw">Form Activity (wee04)</a></li>
-                    <li><a href="https://codepen.io/tycannon/pen/qBGNQXN">psuedo codepen - week 05</a></li>
-                    <li><a href="week05/new-ward-members.json">JSON - Week 05</a></li>
-                    <li><a href="week05/prophets.html">Prophet Cards - Week 05</a></li>
-                    <li><a href="week05/weather.html">Weather API - Week 05</a></li>
-                </ul>
+                <div id="learning-activities">
+                    <!-- Content will be dynamically populated by JavaScript -->
+                </div>
             </section>
             <section class="card information">
                 <h2>INFORMATION</h2>
                 <p><span class="label">Number of Visits: </span><span class="visits"></span></p>
-                
+                <figure>
+                    <span id="current-temp"></span>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
             </section>
         </div>
-      <div class="place">
-        <iframe class="iframe-container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22499.56932270395!2d-113.92088794842236!3d45.17806389236391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53582f0ac1c6b95f%3A0xf0e171459132c687!2sSalmon%2C%20ID%2083467!5e0!3m2!1sen!2sus!4v1715201920957!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="place">
-        <button id="darkModeToggle">Dark Mode</button>
-    </div>
+        <div class="place">
+            <iframe class="iframe-container" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22499.56932270395!2d-113.92088794842236!3d45.17806389236391!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53582f0ac1c6b95f%3A0xf0e171459132c687!2sSalmon%2C%20ID%2083467!5e0!3m2!1sen!2sus!4v1715201920957!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="place">
+            <button id="darkModeToggle">Dark Mode</button>
+        </div>
         <div class="footer-container">
             <footer>
                 <p id="copyright"></p>
                 <p id="lastModified"></p>
-            </footer>   
-             
+            </footer>
         </div>
-    
     </main>
     <script src="scripts/getDates.js"></script>
+    <script src="scripts/links.js"></script>
 </body>
 </html>
