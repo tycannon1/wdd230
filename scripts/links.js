@@ -1,6 +1,6 @@
 const baseURL = 'https://tycannon1.github.io/wdd230/';
 
-fetch('../data/links.json')
+fetch(`${baseURL}data/links.json`)
   .then(response => response.json())
   .then(data => {
     const learningActivitiesSection = document.getElementById('learning-activities');
