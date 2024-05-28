@@ -313,3 +313,50 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 });
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('toggleView');
+    const directory = document.getElementById('directory');
+    let isGridView = true;
+
+    toggleButton.addEventListener('click', () => {
+        isGridView = !isGridView;
+        directory.classList.toggle('list-view', !isGridView);
+    });
+
+    fetch('data/members.json')
+        .then(response => response.json())
+        .then(data => {
+            displayMembers(data);
+        })
+        .catch(error => console.error('Error fetching member data:', error));
+
+    function displayMembers(members) {
+        members.forEach(member => {
+            const memberCard = document.createElement('div');
+            memberCard.classList.add('card');
+            memberCard.innerHTML = `
+            <img src="images/${member.image}" alt="${member.name}">
+            <div>
+                <h2>${member.name}</h2>
+                <p>${member.address}</p>
+                <p>${member.phone}</p>
+                <p><a href="${member.website}" target="_blank">${member.website}</a></p>
+                <p>${member.membershipLevel} Member</p>
+                <p>${member.description}</p>
+            </div>
+            `;
+            directory.appendChild(memberCard);
+        });
+    }
+});
+document.addEventListener('DOMContentLoaded', function() {
+    const toggleButton = document.getElementById('toggleView');
+    const directory = document.getElementById('directory');
+    let isGridView = true;
+
+    toggleButton.addEventListener('click', () => {
+        isGridView = !isGridView;
+        directory.classList.toggle('list-view', !isGridView);
+        toggleButton.textContent = isGridView ? 'Grid' : 'List';
+    });
+});

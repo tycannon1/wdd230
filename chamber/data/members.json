@@ -1,0 +1,47 @@
+[
+    {
+        "name": "Cowboy Coffee Co.",
+        "address": "125 N Cache St, Jackson, WY 83001",
+        "phone": "+13077336328",
+        "website": "https://cowboycoffee.com/",
+        "image": "../images/coffee-cup.webp",
+        "membershipLevel": "Gold",
+        "description": "Cozy local cafe with exposed beams & art-lined walls preparing house-roasted coffee & sandwiches."
+    },
+    {
+        "name": "Wyoming Inn of Jackson Hole",
+        "address": "930 W Broadway, Jackson, WY 83001",
+        "phone": "+13077340035",
+        "website": "https://www.wyominginn.com/",
+        "image": "../images/e0c060d15578f01ff776f26a64e4.jpg",
+        "membershipLevel": "Silver",
+        "description": "This upscale hotel is 1.2 miles from George Washington Memorial Park and 2 miles from Snow King Mountain. It's also 11 miles from Jackson Hole Airport."
+    },
+    {
+        "name": "Center for the Arts",
+        "address": "240 S Glenwood St, Jackson, WY 83001",
+        "phone": "+13077348956",
+        "website": "http://www.jhcenterforthearts.org/",
+        "image": "../images/2020-11-19.jpg",
+        "membershipLevel": "Platinum",
+        "description": "Cool venue for the arts as well as concerts."
+    },
+    {
+        "name": "Million Dollar Cowboy Bar",
+        "address": "25 N Cache St, Jackson, WY 83001",
+        "phone": "+13077332207",
+        "website": "https://www.milliondollarcowboybar.com/",
+        "image": "../images/Blog_1573759145_21.jpg",
+        "membershipLevel": "Gold",
+        "description": "American chow & drinks come in a rustic space with memorabilia plus dancing & live entertainment."
+    },
+    {
+        "name": "Pinky G's Pizzeria- Jackson Hole, WY",
+        "address": "50 W Broadway, Jackson, WY 83001",
+        "phone": "+13077347465",
+        "website": "http://www.pinkygs.com/",
+        "image": "../images/cropped-512.jpg",
+        "membershipLevel": "Bronze",
+        "description": "Local hangout serving pizzas with unique topping combinations in a chill tavern-style setting."
+    }
+]
