@@ -56,11 +56,12 @@ localStorage.setItem("numVisits-ls", numVisits);
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
 const captionDesc = document.querySelector('figcaption');
+const forecastContainer = document.querySelector('#forecast-container');
 
 const apiKey = '6aa83fef24c7b916edbac10801b0cf77';
-const lat = 49.7563;
-const lon = 6.6517;
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+const lat = 43.4799;  // Latitude for Jackson, Wyoming
+const lon = -110.7624;  // Longitude for Jackson, Wyoming
+const url = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
 
 async function apiFetch() {
     try {
@@ -77,12 +78,33 @@ async function apiFetch() {
 }
 
 function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp} &deg;F`;
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    let desc = data.weather[0].description;
+    // Current weather
+    currentTemp.innerHTML = `${data.list[0].main.temp} &deg;F`;
+    const iconsrc = `https://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`;
+    let desc = data.list[0].weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc;
+
+    // 3-day forecast
+    forecastContainer.innerHTML = ''; // Clear any existing content
+    for (let i = 0; i < 3; i++) {
+        const forecastIndex = i * 8; // OpenWeatherMap provides data in 3-hour intervals (8 times per day)
+        const forecast = data.list[forecastIndex];
+        const forecastDate = new Date(forecast.dt * 1000).toLocaleDateString('en-US', { weekday: 'long' });
+        const forecastTemp = `${forecast.main.temp} &deg;F`;
+        const forecastIconSrc = `https://openweathermap.org/img/w/${forecast.weather[0].icon}.png`;
+        const forecastDesc = forecast.weather[0].description;
+
+        forecastContainer.innerHTML += `
+            <div class="forecast">
+                <h3>${forecastDate}</h3>
+                <img src="${forecastIconSrc}" alt="${forecastDesc}">
+                <p>${forecastTemp}</p>
+                <p>${forecastDesc}</p>
+            </div>
+        `;
+    }
 }
 
 // Call the function to fetch and display the weather data
